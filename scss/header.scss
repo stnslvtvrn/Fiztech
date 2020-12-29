@@ -1,0 +1,107 @@
+.header {
+    &__nav {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 144px 1fr auto;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    &__logo-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/img/header__logo.png);
+        background-size: contain;
+    }
+    &__lang-img {
+        width: 51px;
+        height: 37px;
+        margin-right: 15px;
+    }
+    &__flag {
+        display: flex;
+    }
+    &__choose {
+        margin-bottom: 14px;
+    }
+    &__flag-text {
+        white-space: wrap;
+        max-width: 70px;
+    }
+    &__content {
+        background-image: url(/img/bckgrnd_img.png);
+        background-position: top;
+        background-size: cover;
+        min-height: calc(100vh - 125px);
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 400px;
+        height: 690px;
+        overflow: hidden;
+        max-height: calc(100vh - 125px);
+        z-index: 1;
+    }
+    &__text {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 46px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 60px;
+        text-align: left;
+        text-transform: uppercase;
+        max-width: 657px;
+        position: relative;
+        z-index: 2;
+        align-self: end;
+        justify-self: end;
+    }
+
+    &__btn {
+        position: relative;
+        z-index: 2;
+    }
+    &__btn-wrapper {
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__btn {
+        background-color: #ee3b33;
+        border: none;
+        width: 264px;
+        height: 68px;
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+    }
+}
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    justify-self: center;
+}
+.container.head {
+    display: grid;
+    grid-template-rows: 60% auto;
+    min-height: calc(100vh - 125px);
+    position: relative;
+}
