@@ -26,17 +26,34 @@
     }
     &__choose {
         margin-bottom: 14px;
+        color: #3f4244;
+        font-family: "raleway";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
     }
     &__flag-text {
         white-space: wrap;
         max-width: 70px;
+        color: #3f4244;
+        font-family: "raleway";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
     }
     &__content {
         background-image: url(/img/bckgrnd_img.png);
         background-position: top;
         background-size: cover;
-        min-height: calc(100vh - 125px);
+        min-height: 692px;
         position: relative;
+        padding-top: 76px;
     }
     &__img {
         position: absolute;
@@ -98,10 +115,18 @@
     max-width: 500px;
     width: 100%;
     justify-self: center;
+    color: #3f4244;
+    font-family: "raleway";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
 }
 .container.head {
     display: grid;
     grid-template-rows: 60% auto;
-    min-height: calc(100vh - 125px);
+    min-height: 692px;
     position: relative;
 }

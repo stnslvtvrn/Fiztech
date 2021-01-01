@@ -1,0 +1,45 @@
+.why {
+    background-color: #f9f9f9;
+    // background-image: url(/img/bckgrnd.png);
+    padding-top: 100px;
+    padding-bottom: 147px;
+    &__title {
+        margin-bottom: 47px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr 1fr;
+        grid-gap: 34px;
+    }
+    &__card {
+        max-width: 261px;
+        min-height: 243px;
+        width: 100%;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 60% auto;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    &__cards img {
+        align-self: end;
+        margin-bottom: 20px;
+    }
+    &__eye {
+        margin-bottom: 35px !important;
+    }
+    &__text {
+        align-self: start;
+        color: #3f4244;
+        font-family: "raleway";
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+    }
+}

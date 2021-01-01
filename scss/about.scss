@@ -1,0 +1,66 @@
+.about {
+    background-image: url(/img/bckgrnd.png);
+    background-color: #efefef;
+    padding-top: 127px;
+    padding-bottom: 171px;
+    &__title {
+        margin: 0 auto 115px;
+        color: #3f4244;
+        font-family: "Raleway";
+        font-size: 42px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 60px;
+        text-align: center;
+    }
+    &__text, &__item {
+        color: #3f4244;
+        font-family: "Raleway";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 26px;
+        text-align: left;
+    }
+    &__text {
+        max-width: 445px;
+        margin-bottom: 45px;
+        &.first {
+            padding-top: 18px;
+        }
+        &.width {
+            max-width: 380px;
+            &_min  {
+                max-width: 363px;
+            }
+        }
+    }
+    
+    &__wrapper {
+        display: grid;
+        grid-template-columns: minmax(auto, 445px) 1fr;
+        grid-column-gap: 60px;
+    }
+    &__subtitle {
+        color: #3f4244;
+        font-family: "Raleway";
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 26px;
+        text-align: left;
+        margin-bottom: 28px;
+    }
+
+    &__item {
+        list-style-image: url(/img/list_itm.png);
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    &__list {
+        margin-left: 20px;
+    }
+}
