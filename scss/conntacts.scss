@@ -1,0 +1,87 @@
+.contacts {
+    padding-bottom: 69px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+    &__item {
+        max-width: 360px;
+        display: grid;
+        min-height: 360px;
+        grid-auto-rows: 83px 1fr;
+        text-align: center;
+        &.call {
+            justify-self: end;
+        }
+        &.res {
+            justify-self: start;
+        }
+    }
+    &__title {
+        margin-top: 65px;
+        margin-bottom: 100px;
+    }
+    &__subtitle {
+        background-image: url(/img/contbck.png);
+        padding-top: 30px;
+        // padding-bottom: 32px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "raleway";
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    &__list {
+        border: 1px solid #ccc;
+        border-top: none;
+        padding-top: 44px;
+        padding-bottom: 55px;
+        padding-left: 100px;
+        padding-right: 65px;
+        &-item {
+            color: #ee3b33;
+            font-family: "raleway";
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            text-decoration: underline;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            &.phone {
+                color: #3f4244;
+                font-size: 18px;
+                list-style-image: url(/img/call.png);
+                margin-bottom: 10px;
+            }
+            &.mail {
+                list-style-image: url(/img/mail.png);
+            }
+            &.viber {
+                list-style-image: url(/img/viber.png);
+            }
+            &.whatsapp {
+                list-style-image: url(/img/whatsapp.png);
+            }
+            &.telegram {
+                list-style-image: url(/img/telegram.png);
+            }
+            &.fiz {
+                list-style-image: url(/img/laptop.png);
+            }
+            &.inst {
+                list-style-image: url(/img/instagram.png);
+            }
+            &.youtube {
+                list-style-image: url(/img/youtube.png);
+                
+            }
+        }
+    }
+}

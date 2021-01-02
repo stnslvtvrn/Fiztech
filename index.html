@@ -14,12 +14,12 @@
     <header class="header">
         <div class="header__nav">
             <a href="#" class="header__logo"><span class="header__logo-img"></span></a>
-            <ul class="nav__list">
-                <li class="nav__list-item">О компании</li>
-                <li class="nav__list-item">Продукция</li>
-                <li class="nav__list-item">Доставка</li>
-                <li class="nav__list-item">Документы</li>
-                <li class="nav__list-item">Контакты</li>
+            <ul class="nav__list" id="nav">
+                <li class="nav__list-item"><a href="#about">О компании</a></li>
+                <li class="nav__list-item"><a href="#prod"> Продукция</a></li>
+                <li class="nav__list-item"><a href="#ship">Доставка</a></li>
+                <li class="nav__list-item"><a href="#doc"> Документы</a></li>
+                <li class="nav__list-item"><a href="#cont">Контакты</a> </li>
             </ul>
             <div class="header__lang">
                 <p class="header__choose">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2 class="about__title title">
                 О компании
@@ -73,9 +73,9 @@
                         в республике Казахстан является ООО «ВнешторгПрибор-ФТ». </p>
                 </div>
                 <div class="col">
-                    <h3 class="about__subtitle">
+                    <p class="about__subtitle">
                         Наши преимущества:
-                    </h3>
+                    </p>
                     <ul class="about__list">
                         <li class="about__item">Серийное и штучное производство
                         </li>
@@ -160,7 +160,7 @@
             </div>
         </div>
     </section>
-    <section class="products">
+    <section class="products" id="prod">
         <div class="container">
             <h2 class="products__title title">
                 Продукция
@@ -194,7 +194,8 @@
                     <div class="products__item-content"><img src="/img/prod4.png" alt="product">
                         <p class="products__name">
                             Дополнительное оборудование
-                        </p></div>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="products__goods">
@@ -225,15 +226,16 @@
                 </div>
                 <div class="products__items">
                     <img src="/img/item6.png" alt="товар" class="products__img">
-                    <p class="products__item-name">Мембранные 
+                    <p class="products__item-name">Мембранные
                         разделители сред</p>
                     <a href="#" class="products__btn">В каталог</a>
                 </div>
-               
+
             </div>
         </div>
     </section>
-    <section class="shipment">
+    <section class="shipment" id="ship">
+
         <div class="container">
             <h2 class="shipment__title title">
                 Информация о доставке
@@ -265,7 +267,7 @@
                         <ul class="shipment__list">
                             <li class="shipment__list-item">DPD</li>
                             <li class="shipment__list-item">DHL</li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -287,6 +289,143 @@
             </div>
         </div>
     </section>
+    <section class="docs" id="doc">
+        <div class="container">
+            <h2 class="docs__title title">
+                Документы
+            </h2>
+            <div class="docs__slider">
+                <div class="docs__slider-item">
+                    <img src="/img/doc1.png" alt="документ" class="docs__img">
+                    <p class="docs__text">
+                        Свидетельства об утверждении типа. Тип ФТ
+                    </p>
+                    <a href="#" class="docs__link">Скачать</a>
+                </div>
+                <div class="docs__slider-item">
+                    <img src="/img/doc2.png" alt="документ" class="docs__img">
+                    <p class="docs__text">
+                        Свидетельства об утверждении типа. Термометры
+                    </p>
+                    <a href="#" class="docs__link">Скачать</a>
+                </div>
+                <div class="docs__slider-item">
+                    <img src="/img/doc3.png" alt="документ" class="docs__img">
+                    <p class="docs__text">
+                        Свидетельства об утверждении типа. Взрывозащищенные манометры
+                    </p>
+                    <a href="#" class="docs__link">Скачать</a>
+                </div>
+                <div class="docs__slider-item">
+                    <img src="/img/doc1.png" alt="документ" class="docs__img">
+                    <p class="docs__text">
+                        Свидетельства об утверждении типа. Термометры
+                    </p>
+                    <a href="#" class="docs__link">Скачать</a>
+                </div>
+                <div class="docs__slider-item">
+                    <img src="/img/doc2.png" alt="документ" class="docs__img">
+                    <p class="docs__text">
+                        Свидетельства об утверждении типа. Тип ФТ
+                    </p>
+                    <a href="#" class="docs__link">Скачать</a>
+                </div>
+                <div class="docs__slider-item">
+                    <img src="/img/doc3.png" alt="документ" class="docs__img">
+                    <p class="docs__text">
+                        Свидетельства об утверждении типа. Взрывозащищенные манометры
+                    </p>
+                    <a href="#" class="docs__link">Скачать</a>
+                </div>
+            </div>
+            <div class="docs__request">
+                <p class="docs__request-text">
+                    Остальные документы предоставляются по запросу
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="cont">
+        <div class="container">
+            <h2 class="contacts__title title">
+                Контакты
+            </h2>
+            <div class="contacts__wrapper">
+                <div class="contacts__item call">
+                    <h4 class="contacts__subtitle">
+                        Позвонить или написать
+                    </h4>
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item phone">+7 996 637 52 00 </li>
+                        <li class="contacts__list-item mail">office@vtp-ft.ru</li>
+                        <li class="contacts__list-item viber">Написать в Вайбер</li>
+                        <li class="contacts__list-item whatsapp">Написать в WhatsApp</li>
+                        <li class="contacts__list-item telegram">Написать в Телеграм</li>
+                    </ul>
+                </div>
+                <div class="contacts__item res">
+                    <h4 class="contacts__subtitle">
+                        Наши ресурсы
+                    </h4>
+                    <ul class="contacts__list">
+
+                        <li class="contacts__list-item fiz">Написать в Вайбер</li>
+                        <li class="contacts__list-item inst">Написать в WhatsApp</li>
+                        <li class="contacts__list-item youtube">Написать в Телеграм</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer__title">
+                Позвоните по номеру +7 996 637 52 00 или оставьте заявку.
+
+            </h3>
+            <p class="footer__subtitle">
+                Мы свяжемся с Вами в течение дня, подберем оборудование,
+                назовем точную стоимость и сроки поставки.
+            </p>
+            <form action="#" class="footer__form">
+                <div class="row-wrapper">
+                    <div class="wrapper">
+                        <label for="name">* Ваше имя:</label>
+                        <input type="text" class="footer__input" id="name" name="user-name" required>
+                    </div>
+                    <div class="wrapper">
+                        <label for="number">* Номер телефона:</label>
+                        <input type="tel" class="footer__input" id="number" name="user-number" required>
+                    </div>
+                </div>
+                <div class="row-wrapper">
+                    <div class="wrapper">
+                        <label for="mail">* Ваш e-mail:</label>
+                        <input type="email" class="footer__input" id="mail" name="user-mail" required>
+                    </div>
+                    <div class="wrapper add-file">
+                        <img src="/img/upload.png" alt="Прикрепить файл">
+                        <a href="#" class="footer__link">Прикрепить файл</a>
+                    </div>
+                </div>
+                <div class="row-wrapper last">
+                    <label for="msg">Ваше сообщение</label>
+                    <textarea name="message" id="msg" cols="30" rows="3"></textarea>
+                </div>
+                <button class="footer__btn" type="submit">
+                    Отправить заявку
+                </button>
+                <div class="wrapper check">
+                    <input type="checkbox" id="check" class="footer__check" required>
+                    <label for="check" class="footer__text checkbox">
+                        Даю свое согласие на обработку персональных данных
+                    </label>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <script src="/js/main.min.js"></script>
 </body>
+
 
 </html>
