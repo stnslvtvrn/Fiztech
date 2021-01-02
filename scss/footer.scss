@@ -68,7 +68,7 @@
 .row-wrapper {
     margin-bottom: 21px;
     display: grid;
-    grid-gap: 0 38px;
+    gap: 0 38px;
     grid-template-columns: 1fr 1fr;
     &.last {
         grid-template-columns: 1fr;

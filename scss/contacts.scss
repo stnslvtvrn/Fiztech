@@ -3,7 +3,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 30px;
+        column-gap: 30px;
     }
     &__item {
         max-width: 360px;
@@ -80,7 +80,6 @@
             }
             &.youtube {
                 list-style-image: url(/img/youtube.png);
-                
             }
         }
     }

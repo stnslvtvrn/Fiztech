@@ -41,7 +41,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: minmax(auto, 445px) 1fr;
-        grid-column-gap: 60px;
+        column-gap: 60px;
     }
     &__subtitle {
         color: #3f4244;
