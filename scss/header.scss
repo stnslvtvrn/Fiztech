@@ -123,6 +123,13 @@
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
+    &-item {
+        transition: all .5s ease ;
+    }
+    &-item:hover {
+        transform: scale(1.1);
+        color: red;
+    }
 }
 .container.head {
     display: grid;

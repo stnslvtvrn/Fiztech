@@ -11,6 +11,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 1fr 1fr;
         gap: 34px;
+        
     }
     &__card {
         max-width: 261px;
@@ -23,8 +24,14 @@
         align-items: center;
         text-align: center;
         position: relative;
+        transition: all 1s ease;
+        &:hover img {   
+            transform: rotateY(180deg);
+        }
+        
     }
     &__cards img {
+        transition: all 1s ease;
         align-self: end;
         margin-bottom: 20px;
     }

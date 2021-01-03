@@ -54,6 +54,7 @@
             text-decoration: underline;
             margin-bottom: 5px;
             padding-left: 20px;
+            transition: all .3s ease;
             &.phone {
                 color: #3f4244;
                 font-size: 18px;
@@ -80,6 +81,9 @@
             }
             &.youtube {
                 list-style-image: url(/img/youtube.png);
+            }
+            &:hover{
+                transform: scale(1.05);
             }
         }
     }

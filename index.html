@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 
@@ -98,7 +99,7 @@
                 Почему мы
             </h2>
             <div class="why__cards">
-                <div class="why__card">
+                <div class="why__card card1">
                     <img src="/img/card1.png" alt="card">
                     <p class="why__text">
                         Быстрые
@@ -388,37 +389,38 @@
                 назовем точную стоимость и сроки поставки.
             </p>
             <form action="#" class="footer__form">
-                <div class="row-wrapper">
-                    <div class="wrapper">
+                <div class="footer__row-wrapper">
+                    <div class="footer__wrapper-inner name">
                         <label for="name">* Ваше имя:</label>
                         <input type="text" class="footer__input" id="name" name="user-name" required>
                     </div>
-                    <div class="wrapper">
+                    <div class="footer__wrapper-inner phone">
                         <label for="number">* Номер телефона:</label>
                         <input type="tel" class="footer__input" id="number" name="user-number" required>
                     </div>
                 </div>
-                <div class="row-wrapper">
-                    <div class="wrapper">
+                <div class="footer__row-wrapper">
+                    <div class="footer__wrapper-inner mail">
                         <label for="mail">* Ваш e-mail:</label>
                         <input type="email" class="footer__input" id="mail" name="user-mail" required>
                     </div>
-                    <div class="wrapper add-file">
+                    <div class="footer__wrapper-inner add-file">
                         <img src="/img/upload.png" alt="Прикрепить файл">
                         <a href="#" class="footer__link">Прикрепить файл</a>
                     </div>
                 </div>
-                <div class="row-wrapper last">
+                <div class="footer__row-wrapper last">
                     <label for="msg">Ваше сообщение</label>
-                    <textarea name="message" id="msg" cols="30" rows="3"></textarea>
+                    <textarea name="message" id="msg" cols="30" rows="1"></textarea>
                 </div>
                 <button class="footer__btn" type="submit">
                     Отправить заявку
                 </button>
-                <div class="wrapper check">
-                    <input type="checkbox" id="check" class="footer__check" required>
+                <div class="footer__wrapper-inner check">
                     <label for="check" class="footer__text checkbox">
-                        Даю свое согласие на обработку персональных данных
+                        <input type="checkbox" id="check" class="footer__checkbox" required>
+                        <span class="footer__checkbox-fake"></span>
+                        <span class="footer__text">Даю свое согласие на обработку персональных данных</span>
                     </label>
                 </div>
             </form>

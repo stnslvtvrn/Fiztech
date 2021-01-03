@@ -32,10 +32,11 @@
         margin: 0 auto 67px;
     }
     &__input {
-        
         width: 100%;
         height: 74px;
         font-size: 24px;
+        padding: 0 15px 0 50px;
+        position: relative;
     }
     &__link {
         color: #ee3b33;
@@ -64,58 +65,134 @@
         line-height: normal;
         text-align: center;
     }
-}
-.row-wrapper {
-    margin-bottom: 21px;
-    display: grid;
-    gap: 0 38px;
-    grid-template-columns: 1fr 1fr;
-    &.last {
-        grid-template-columns: 1fr;
+    &__row-wrapper {
+        margin-bottom: 21px;
+        display: grid;
+        gap: 0 38px;
+        grid-template-columns: 1fr 1fr;
+        &.last {
+            grid-template-columns: 1fr;
+            margin-bottom: 33px;
+        }
+        &.last {
+            position: relative;
+            z-index: 5;
+        }
+        &.last::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 23px;
+            bottom: 25%;
+            background-repeat: no-repeat;
+            z-index: 10;
+            width: 21px;
+            height: 20px;
+            background-image: url(/img/chat.png);
+        }
+    }
+    &__wrapper-inner label,
+    &__row-wrapper.last label {
+        margin-bottom: 15px;
+        display: block;
+        opacity: 0.5;
+        color: #3f4244;
+        font-family: "raleway";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+    &__wrapper-inner {
+        z-index: 5;
+        position: relative;
+
+        &.check {
+            display: flex;
+            justify-content: center;
+        }
+        &.add-file {
+            align-self: end;
+            margin-bottom: 25px;
+            & img {
+                margin: 0 20px;
+                vertical-align: bottom;
+            }
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 23px;
+            bottom: 25%;
+            background-repeat: no-repeat;
+            z-index: 10;
+        }
+        &.name::before {
+            width: 21px;
+            height: 23px;
+            background-image: url(/img/user_name.png);
+        }
+        &.phone::before {
+            width: 20px;
+            height: 20px;
+            background-image: url(/img/call.png);
+        }
+        &.mail::before {
+            width: 23px;
+            height: 16px;
+            background-image: url(/img/mail.png);
+        }
+    }
+    &__text {
+        margin-left: 15px;
+    }
+    &__text.checkbox {
+        margin-left: 12px;
+        color: #444444;
+        font-family: "raleway";
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        opacity: 1;
+    }
+    &__checkbox {
+        display: none;
+        &:checked + &-fake::before {
+            opacity: 1;
+        }
+        &-fake {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            border: 2px solid #000;
+            vertical-align: text-top;
+            position: relative;
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: solid;
+                content: "\f00c";
+                position: absolute;
+                top: -30%;
+                left: 10%;
+                transform: scale(1.1);
+                display: block;
+                width: 10px;
+                height: 10px;
+                opacity: 0;
+            }
+        }
     }
 }
-.wrapper label,
-.row-wrapper.last label {
-    margin-bottom: 15px;
-    display: block;
-    opacity: 0.5;
-    color: #3f4244;
-    font-family: "raleway";
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: left;
-}
+
 #msg {
     resize: none;
-    font-size: 16px;
+    font-size: 18px;
     min-height: 74px;
-}
-.row-wrapper.last {
-    margin-bottom: 33px;
-}
-.wrapper.check {
-    display: flex;
-    justify-content: center;
-}
-.wrapper.add-file {
-    align-self: end;
-    margin-bottom: 25px;
-    & img {
-        margin: 0 20px;
-    }
-}
-.footer__text.checkbox {
-    margin-left: 12px;
-    color: #444444;
-    font-family: "raleway";
-    font-size: 16px;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: left;
-    opacity: 1;
+    padding: 22px 15px 15px 50px;
 }

@@ -1,0 +1,10 @@
+@media(max-width: 1000px) {
+    .products {
+        &__goods {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__category {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
